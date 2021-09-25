@@ -38,6 +38,9 @@ jobs:
         run: npm install
 
       - run: npm list -all
+
+      - run: ls -l themes/docsy/assets/vendor
+
       - run: hugo -v
 
       - name: Build
