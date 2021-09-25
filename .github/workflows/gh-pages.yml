@@ -41,6 +41,7 @@ jobs:
 
       # - run: npm list -all
 
+      - run: git submodule update --init --recursive
       - run: ls -l themes/docsy/assets/vendor
       - run: tree
       #- run: ls -l themes/docsy/assets/vendor/bootstrap/scss
