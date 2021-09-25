@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
+          submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
@@ -41,7 +41,7 @@ jobs:
 
       # - run: npm list -all
 
-      - run: git submodule update --init --recursive
+      #- run: git submodule update --init --recursive
       - run: ls -l themes/docsy/assets/vendor
       - run: tree
       #- run: ls -l themes/docsy/assets/vendor/bootstrap/scss
