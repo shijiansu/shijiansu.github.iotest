@@ -20,7 +20,6 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-      - run: hugo -v
 
       - name: Setup Node
         uses: actions/setup-node@v2
@@ -37,6 +36,8 @@ jobs:
 
       - name: Install
         run: npm install
+
+      - run: hugo -v
 
       - name: Build
         run: hugo --minify
