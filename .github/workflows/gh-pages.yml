@@ -37,6 +37,7 @@ jobs:
       - name: Install
         run: npm install
 
+      - run: npm list -all
       - run: hugo -v
 
       - name: Build
