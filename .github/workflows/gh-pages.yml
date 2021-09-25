@@ -42,6 +42,7 @@ jobs:
       # - run: npm list -all
 
       - run: ls -l themes/docsy/assets/vendor
+      - run: ls -l themes/docsy/assets/vendor/bootstrap/scss
 
       - run: hugo -v
 
